@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DeploymentsComponent } from './deployments/deployments.component';
 import { SessionsComponent } from './sessions/sessions.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+
 const appRoutes: Routes = [
   {path:'', redirectTo: 'deployments', pathMatch: 'full'},
   {path: 'deployments', component: DeploymentsComponent},
@@ -16,7 +16,7 @@ const appRoutes: Routes = [
   imports:      [ BrowserModule, 
                   FormsModule, 
                   RouterModule.forRoot(appRoutes) ],
-  declarations: [ AppComponent, DeploymentsComponent, SessionsComponent, WelcomeComponent],
+  declarations: [ AppComponent, DeploymentsComponent, SessionsComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
